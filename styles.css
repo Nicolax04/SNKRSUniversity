@@ -1,9 +1,47 @@
+.flex-container {
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .box1 {
+  
+    width: 17%;
+    height: 150px;
+    text-align: center;
+    
+    margin:2%
+  }
+  
+  .box2 {
+    background-color: lightgreen;
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    
+    margin :2%;
+  }
+  
 nav{
     background-color: black;
     color: #f0f8ff;
-    height: min-content;
-    padding: 1%;
+
+ 
    
+}
+#parent {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+
+      
+}
+
+.child {
+    display: inline-block;
+    width:fit-content;
+    height: max-content;
+    padding: 2%;
 }
 
 body{
@@ -15,10 +53,51 @@ main{
 }
 
 img.logo{
-    width: 7%;
-    height: 7%;
-    margin: 0.5%;
+    padding: 0.5%;
+    width: 150px;
 }
-body{
-    
-}
+
+
+
+.search-container {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  }
+  
+  form {
+    align-items: center;
+    display: flex;
+    padding: 2%;   
+    height: 100%;
+    border-radius: 25px;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    height: 100%;
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius:10px 0 0 10px;
+
+  }
+  
+  button[type="submit"] {
+    width: 30%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius:0 10px 10px 0;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+
